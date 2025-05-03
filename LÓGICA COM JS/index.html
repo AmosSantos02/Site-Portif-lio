@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Desafios JS</title>
+        <script src="/LÓGICA COM JS/app.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                padding: 30px;
+                background-color: black;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: black;
+                color: rgb(0, 132, 255);
+                width: auto;
+                height: auto;
+                margin: 8px 0;
+                padding: 10px 50px;
+                font-size: 20px;
+                cursor: pointer;
+                border: rgb(0, 132, 255);
+                border-radius: 30px;
+                transition: all 0.9s ease; /* <- aplique aqui para suavizar entrada E saída */
+            }
+            button:hover {
+                font-size: 25px;
+                width: auto;
+                height: auto;
+                transform: scale(1.3);
+                box-shadow: 0px 0px 10px rgb(0, 132, 255), inset 0px 0px 10px rgb(0, 132, 255);
+            }
+            .botoesDesafios {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mini Desafios em JavaScript</h1>
+
+        <div class="botoesDesafios">
+            <button onclick="desafioNomeCompleto()">Desafio 1 – Nome completo</button><br />
+            <button onclick="iniciarContagemParesImpares()">Desafio 2 – Quantos Pare e Ímpares</button><br />
+            <button onclick="desafioCalculadora()">Desafio 3 – Calculadora</button><br />
+            <button onclick="desafioConversorHoras()">Desafio 4 – Conversor de Horas</button><br />
+            <!-- Novos desafios com operador % -->
+            <button onclick="desafioParImpar()" id="btnParOuImpar2">Desafio 5 – Par ou Ímpar (versão %)</button><br />
+            <button onclick="iniciarDivisivel3()" id="btnDivisivelPor3">Desafio 6 – Divisível por 3</button><br />
+            <button onclick="iniciarDivisivel2E5()" id="btnMultiploDe5e2">Desafio 7 – Divisível por 5 e por 2</button><br />
+            <button onclick="iniciarResto()" id="btnMaiorResto">Desafio 8 – Mostrar o resto de uma divisão</button><br />
+            <!-- Desafio 9 – Dobro de um número -->
+            <button onclick="iniciarDobro()" id="btnDobro">Desafio 9 – Dobro</button><br />
+            <!-- Desafio 10 – Verifica maioridade -->
+            <button onclick="validarMaioridade()" id="btnMaioridade">Desafio 10 – Maioridade</button><br />
+            <!-- Desafio 11 – Multiplica dois números -->
+            <button onclick="iniciarMultiplicacao()" id="btnMultiplica">Desafio 11 – Multiplicação</button><br />
+            <!-- Desafio 12 – Nome completo -->
+            <button onclick="iniciarNomeCompleto()" id="btnNomeCompleto">Desafio 12 – Nome completo</button><br />
+            <!-- Desafio 13 – Triplo -->
+            <button onclick="triploDeNumero()" id="btnTriplo">Desafio 13 – Triplo</button><br />
+            <!-- Desafio 14 – Soma -->
+            <button id="btnSoma">Desafio 14 – Soma</button><br />
+            <!-- Desafio 15 – Par ou ímpar (com return) -->
+            <button onclick="iniciarEhPar()" id="btnParReturn">Desafio 15 – É par? (return)</button><br />
+            <!-- Desafio 16 – Primeira letra do nome -->
+            <button onclick="iniciar1Letra()" id="btnPrimeiraLetra">Desafio 16 – Primeira letra</button><br />
+            <!-- Desafio 17 – Tabuada do 5 -->
+            <button onclick="iniciarTabuada5()" id="btnTabuada5">Desafio 17 – Tabuada do 5</button><br />
+            <!-- Desafio 18 – Contar de 1 a 20 -->
+            <button onclick="iniciarContar20()" id="btnContar20">Desafio 18 – Contar até 20</button><br />
+            <!-- Desafio 19 – Mostrar pares até 20 -->
+            <button onclick="iniciarPares()" id="btnPares">Desafio 19 – Pares até 20</button><br />
+            <!-- Desafio 20 – Contagem regressiva -->
+            <button onclick="iniciarRegressiva()" id="btnRegressiva">Desafio 20 – Contagem regressiva</button><br />
+        </div>
+    </body>
+</html>
